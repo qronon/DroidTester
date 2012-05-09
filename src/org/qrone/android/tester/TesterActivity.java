@@ -43,7 +43,7 @@ public class TesterActivity extends Activity {
         Asyncer hipritest = testHIPRI();
         tv.append("hiprisize" + hipritest.size());
         Asyncer a = new Asyncer();
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 100; i++) {
             a = a.add(hipritest);
 		}
         a.drawer(new Asyncer.Task() {
